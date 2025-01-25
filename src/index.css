@@ -1,6 +1,8 @@
 :root{
-  --primary-color:#;
-  --secondary-color:#;
+  --primary-color:#B671FF;
+  --secondary-color:#FF8DA6;
+  --tertiary-color:#EA85C1;
+  --background-color:#FAF5FC;
 }
 *{
   padding: 0;
