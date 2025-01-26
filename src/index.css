@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 :root{
   --primary-color:#B671FF;
   --secondary-color:#FF8DA6;
@@ -8,4 +10,47 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+/* Base container styles */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.active{
+  color: var(--primary-color);
+}
+/* Breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; /* Small (sm) */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; /* Medium (md) */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* Large (lg) */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Extra large (xl) */
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px; /* Extra extra large (xxl) */
+  }
 }
