@@ -15,9 +15,7 @@
 }
 .nav_links{
     display: none;
-    flex-basis: 40%;
     align-items: center;
-    justify-content: space-between;
 }
 
 .nav_links a{
@@ -26,6 +24,9 @@
     text-decoration: none;
     letter-spacing: 1px;
     font-size: large;
+}
+.nav_links a:not(:last-of-type){
+    margin-right: 1.3rem;
 }
 .nav_buttons{
     display: none;
@@ -60,7 +61,11 @@
 }
 
 @media (min-width: 768px) {
-    .navbar_container{
+   
+}
+
+@media (min-width: 992px) {
+   .navbar_container{
         padding:1rem 0;
     }
  .menuBtn{
@@ -72,10 +77,6 @@
  .nav_buttons{
     display:block;
  }
-}
-
-@media (min-width: 992px) {
-  
 }
 
 @media (min-width: 1200px) {
