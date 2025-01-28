@@ -1,6 +1,9 @@
+import HeroHeader from "../HeroPage/HeroHeader"
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <>
+      <HeroHeader/>
+    </>
   )
 }
 
