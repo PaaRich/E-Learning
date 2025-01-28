@@ -5,6 +5,7 @@
   --secondary-color:#FF8DA6;
   --tertiary-color:#EA85C1;
   --background-color:#FAF5FC;
+  --light-black:rgba(0, 0, 0, 0.047);
 }
 *{
   padding: 0;

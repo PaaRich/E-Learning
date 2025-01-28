@@ -1,0 +1,19 @@
+.button{
+    padding: 3px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: large;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    transition-duration: 0.3s;
+}
+button:hover{
+     color: white!important;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color))!important;
+}
+.bgFilled{
+    color: white!important;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color))!important;
+}
