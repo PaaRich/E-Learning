@@ -3,6 +3,7 @@ import logo from "../../assets/b88a4c76e64743c5b10786aa1b66404b-free.png"
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   return (
@@ -16,18 +17,49 @@ const Navbar = () => {
               </div>
 
               {/* nav_links */}
-              <div className={styles.nav_links}>
-                  <NavLink to={"/"}>Home</NavLink>
-                  <NavLink to={"courses"}><span>Courses</span><IoIosArrowDown/></NavLink>
-                  <NavLink to={"teachers"}><span>Teachers</span><IoIosArrowDown/></NavLink>
-                  <NavLink to={"offers"}><span>Offers</span><IoIosArrowDown/></NavLink>
-                  <NavLink to={"contact"}>Contact</NavLink>
-              </div>
+              <ul className={styles.nav_links}>
+                  <li><NavLink to={"/"}>Home</NavLink></li>
+
+                  {/* courses */}
+                  <li className={styles.head}>
+                      <div style={{display:"flex",alignItems:"center"}}><span>Courses</span><IoIosArrowDown/></div>
+                      <ul className={styles.dropdown_list}>
+                          <li><NavLink to={"/courses"}>Frontend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Backend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>FullStack Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Networking</NavLink></li>
+                      </ul>
+                  </li>
+
+                  {/* teachers */}
+                  <li className={styles.head}>
+                      <div style={{display:"flex",alignItems:"center"}}><span>Teachers</span><IoIosArrowDown/></div>
+                      <ul className={styles.dropdown_list}>
+                          <li><NavLink to={"/courses"}>Frontend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Backend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>FullStack Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Networking</NavLink></li>
+                      </ul>
+                  </li>
+
+                  {/* offers */}
+                  <li className={styles.head}>
+                      <div style={{display:"flex",alignItems:"center"}}><span>Offers</span><IoIosArrowDown/></div>
+                      <ul className={styles.dropdown_list}>
+                          <li><NavLink to={"/courses"}>Frontend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Backend Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>FullStack Development</NavLink></li>
+                          <li><NavLink to={"/courses"}>Networking</NavLink></li>
+                      </ul>
+                  </li>
+                  <li><NavLink to={"/contact"}>Contact</NavLink></li>
+
+              </ul>
 
               {/* buttons */}
               <div className={styles.nav_buttons}>
-                  <button type="submit">Sign in</button>
-                  <button type="submit">Free trial</button>
+                  <span style={{marginRight:'10px'}}><Button text="Sign in" /></span>
+                  <Button text="Free trial" isFilled/>
               </div>
 
               {/* menuBtn */}
