@@ -1,0 +1,23 @@
+footer{
+     background: linear-gradient(to bottom,var(--primary-color),var(--secondary-color));
+     padding: 2rem 0;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    color: white;
+}
+.footer_container div{
+    padding: 1rem 0;
+}
+.footer_container ul li{
+    list-style: none;
+    padding: 0.3rem 0;
+}
+.footer_container a{
+    text-decoration: none;
+    color: white;
+}
+.footer_container a:hover{
+    text-decoration: underline;
+}
