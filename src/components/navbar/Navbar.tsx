@@ -23,7 +23,7 @@ const Navbar = () => {
                   {/* courses */}
                   <li className={styles.head}>
                       <div style={{display:"flex",alignItems:"center"}}><span>Courses</span><IoIosArrowDown/></div>
-                      <ul className={styles.dropdown_list}>
+                      <ul role="courses_drop" className={styles.dropdown_list}>
                           <li><NavLink to={"/courses"}>Frontend Development</NavLink></li>
                           <li><NavLink to={"/courses"}>Backend Development</NavLink></li>
                           <li><NavLink to={"/courses"}>FullStack Development</NavLink></li>
