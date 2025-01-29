@@ -1,6 +1,7 @@
 .hero_header{
     position: relative;
     height: 85dvh;
+    z-index: -999;
 }
 .hero_container{
     position: absolute;
