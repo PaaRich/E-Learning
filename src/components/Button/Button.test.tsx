@@ -5,9 +5,10 @@ import Button from "./Button";
 
 describe("Testing the button", () => {
     test("test existence with state", () => {
-        render(<Button text={""} isFilled/>);
-        const Btn = screen.getByRole("button");
+        render(<Button text={"Sign in"} isFilled/>)
+        const Btn = screen.getByRole("button")
         expect(Btn).toBeInTheDocument()
+        //expect(Btn).toHaveStyle("background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color))!important")
     })
 
     test("renders button with correct text prop", () => {
